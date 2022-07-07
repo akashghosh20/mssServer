@@ -27,6 +27,30 @@ async function run(){
             const results = await cursor.toArray();
             res.send(results);
         })
+        app.get('/results7', async(req, res) =>{
+            const query = {};
+            const cursor = resultCollection.find(query);
+            const results7 = await cursor.toArray();
+            res.send(results7);
+        })
+        // app.get('/results8', async(req, res) =>{
+        //     const query = {};
+        //     const cursor = result8Collection.find(query);
+        //     const results8 = await cursor.toArray();
+        //     res.send(results8);
+        // })
+        // app.get('/results9', async(req, res) =>{
+        //     const query = {};
+        //     const cursor = result9Collection.find(query);
+        //     const results9 = await cursor.toArray();
+        //     res.send(results9);
+        // })
+        // app.get('/results10', async(req, res) =>{
+        //     const query = {};
+        //     const cursor = result10Collection.find(query);
+        //     const results10 = await cursor.toArray();
+        //     res.send(results10);
+        // })
 
 
     }
